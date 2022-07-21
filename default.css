@@ -136,6 +136,8 @@ h6 { font-size: 16px;}
 
 .left-column{
     grid-area: left-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #profile_pic{
@@ -166,6 +168,24 @@ h6 { font-size: 16px;}
     -moz-box-shadow: 17px 8px 42px -28px rgba(0,0,0,0.7);
 
     cursor: pointer;
+}
+
+.theme-dot:hover{
+    border-width:5px;
+}
+
+#light-mode{
+    background-color: #fff;
+}
+
+#dark-mode{
+    background-color: #0d243a;
+}
+
+#settings-note{
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
 }
 
 .right-column{
