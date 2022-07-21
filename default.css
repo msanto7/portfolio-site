@@ -11,6 +11,7 @@
     --themeDotBorder:#24292e;
 
     --previewBg: rgb(251, 249, 243, 0.8);
+    --previewShadow: #f0ead6;
 }
 
 
@@ -196,6 +197,14 @@ h6 { font-size: 16px;}
     align-content: center;
 }
 
+#preview-shadow {
+    background-color: var(--previewShadow);
+    width: 400px;
+    height: 120px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
 #preview {
     width: 400px;
     border:1.5px solid #17a2b8;
@@ -236,5 +245,16 @@ h6 { font-size: 16px;}
 @media screen and (max-width: 1200px){
     .main-container{
         width: 95%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .intro-wrapper{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'nav-wrapper'
+            'left-column'
+            'right-column'
+        ;
     }
 }
