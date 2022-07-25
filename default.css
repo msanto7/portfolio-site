@@ -268,6 +268,33 @@ h6 { font-size: 16px;}
     width: 100%;
 }
 
+.post-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.post {
+    border: 1px solid var(--borderColor);
+    box-shadow: 17px 8px 42px -28px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 17px 8px 42px -28px rgba(0,0,0,0.7);
+    -moz-box-shadow: 17px 8px 42px -28px rgba(0,0,0,0.7);
+
+}
+
+.thumbnail {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.post-preview {
+    background-color: #fff;
+    padding: 15px;
+}
+
 @media screen and (max-width: 1200px){
     .main-container{
         width: 95%;
